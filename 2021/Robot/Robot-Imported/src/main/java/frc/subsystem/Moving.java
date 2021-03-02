@@ -35,12 +35,13 @@ public class Moving {
         // drive.arcadeDrive(-stick.getRawAxis(1) * 0.5, stick.getRawAxis(0) / 2);
         // drive.tankDrive((-stick.getRawAxis(1)) / 2 + (-stick.getRawAxis(0) / 2),
         // (-stick.getRawAxis(1)) / 2 + (-stick.getRawAxis(0) / 2));
-        if (Robot.stick.getRawAxis(1) == 0 && (Robot.stick.getRawAxis(4) == 0)) {
-            drive.tankDrive(-(-Robot.stick.getRawAxis(1) + Robot.stick.getRawAxis(4)) * (Robot.speeddetail * 0.5),
-                    -(-Robot.stick.getRawAxis(1) + (-Robot.stick.getRawAxis(4))) * (Robot.speeddetail * 0.5));
-            wait(500);
-            drive.tankDrive(0, 0);
-        }
+
+        // if (Robot.stick.getRawAxis(1) == 0 && (Robot.stick.getRawAxis(4) == 0)) {
+        //     drive.tankDrive(-(-Robot.stick.getRawAxis(1) + Robot.stick.getRawAxis(4)) * (Robot.speeddetail * 0.5),
+        //             -(-Robot.stick.getRawAxis(1) + (-Robot.stick.getRawAxis(4))) * (Robot.speeddetail * 0.5));
+        //     wait(500);
+        //     drive.tankDrive(0, 0);
+        // }
 
         if (Robot.stick.getRawButtonPressed(1)) { // 按A可切換檔次(0,0.5,1)
             Robot.speeddetail += 1;
