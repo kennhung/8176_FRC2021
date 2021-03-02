@@ -29,15 +29,12 @@ public class Ball {
 
     public static void teleop() {
         if (Robot.stick.getRawButtonPressed(5)) {
-            wait(100);
             Robot.Ballopen = !Robot.Ballopen;
         }
         if (Robot.stick.getRawButtonPressed(6)) {
-            wait(100);
             Robot.BallShootopen = !Robot.BallShootopen;
         }
         if (Robot.stick.getRawButtonPressed(2)) {
-            wait(100);
             Robot.BallShootRead = !Robot.BallShootRead;
         }
         if (Robot.Ballopen) {

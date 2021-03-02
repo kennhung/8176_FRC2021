@@ -43,7 +43,6 @@ public class Moving {
         }
 
         if (Robot.stick.getRawButtonPressed(1)) { // 按A可切換檔次(0,0.5,1)
-            wait(100);
             Robot.speeddetail += 1;
             Robot.speeddetail %= 3;
         }
